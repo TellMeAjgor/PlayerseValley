@@ -74,8 +74,8 @@ namespace PlayerseValleyAPI.Migrations
                     b.Property<Guid>("AccountId")
                         .HasColumnType("uuid");
 
-                    b.Property<short>("Class")
-                        .HasColumnType("smallint");
+                    b.Property<int>("Class")
+                        .HasColumnType("integer");
 
                     b.Property<Guid>("CurrentLocation")
                         .HasColumnType("uuid");
@@ -92,8 +92,8 @@ namespace PlayerseValleyAPI.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("text");
 
-                    b.Property<short>("Sex")
-                        .HasColumnType("smallint");
+                    b.Property<int>("Sex")
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 

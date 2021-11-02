@@ -46,8 +46,8 @@ namespace PlayerseValleyAPI.Migrations
                     Experience = table.Column<long>(type: "bigint", nullable: false),
                     Gold = table.Column<long>(type: "bigint", nullable: false),
                     Level = table.Column<short>(type: "smallint", nullable: false),
-                    Class = table.Column<short>(type: "smallint", nullable: false),
-                    Sex = table.Column<short>(type: "smallint", nullable: false),
+                    Class = table.Column<int>(type: "integer", nullable: false),
+                    Sex = table.Column<int>(type: "integer", nullable: false),
                     CurrentLocation = table.Column<Guid>(type: "uuid", nullable: false),
                     AccountId = table.Column<Guid>(type: "uuid", nullable: false)
                 },

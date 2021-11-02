@@ -10,7 +10,7 @@ using PlayerseValleyAPI.Data;
 namespace PlayerseValleyAPI.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20211102170952_init")]
+    [Migration("20211102174156_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -76,8 +76,8 @@ namespace PlayerseValleyAPI.Migrations
                     b.Property<Guid>("AccountId")
                         .HasColumnType("uuid");
 
-                    b.Property<short>("Class")
-                        .HasColumnType("smallint");
+                    b.Property<int>("Class")
+                        .HasColumnType("integer");
 
                     b.Property<Guid>("CurrentLocation")
                         .HasColumnType("uuid");
@@ -94,8 +94,8 @@ namespace PlayerseValleyAPI.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("text");
 
-                    b.Property<short>("Sex")
-                        .HasColumnType("smallint");
+                    b.Property<int>("Sex")
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 

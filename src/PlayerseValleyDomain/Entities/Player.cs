@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PlayerseValleyDomain.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -17,8 +18,8 @@ namespace PlayerseValleyDomain.Entities
         public long Experience { get; set; }
         public long Gold { get; set; }
         public short Level { get; set; }
-        public short Class { get; set; }
-        public short Sex { get; set; }
+        public CharacterClass Class { get; set; }
+        public CharacterGender Sex { get; set; }
         public Guid CurrentLocation { get; set; }
         public Guid AccountId { get; set; }
 
